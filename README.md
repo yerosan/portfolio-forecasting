@@ -3,15 +3,25 @@
 This project demonstrates time series forecasting to optimize an investment portfolio. It leverages historical data from Tesla (TSLA), Vanguard Total Bond Market ETF (BND), and S&P 500 ETF (SPY) to make data-driven portfolio allocation decisions.
 
 ## Project Structure
-- **notebooks/**: Jupyter notebooks for detailed analysis (e.g., `EDA.ipynb`).
-- **scripts/**: Contains modules for data processing:
-  - `data_loader.py`: Loads data.
-  - `data_cleaner.py`: Cleans and prepares data.
-  - `data_exploration.py`: Performs exploratory data analysis.
-- **src/**: Core source code for the project.
-- **tests/**: Contains unit tests.
-- **week11/**: Weekly progress folder.
-
+``` bush
+├── .vscode/                      # VSCode settings
+├── .github/workflows/            # CI/CD for unit tests
+├── notebooks/                    # Jupyter notebooks for EDA and modeling
+│   ├── __init__.py               # Initialization file
+│   └── EDA.ipynb                 # EDA notebook
+├── scripts/                      # Scripted pipelines for reproducible runs
+│   ├── __init__.py               # Initialization file
+│   ├── data_cleaner.py           # Data cleaning script
+│   ├── data_exploration.py       # Data exploration script
+│   └── data_loader.py            # Data loading script
+├── src/                          # Main codebase
+│   └── __init__.py               # Initialization file
+├── tests/                        # Unit tests for project modules
+├── week11/                       # porject env
+├── .gitignore                    # Git ignore file
+├── README.md                     # Project overview
+└── requirements.txt              # Dependencies
+```
 ## Progress
 **Completed:**
 - **Data Preprocessing**: Loaded, cleaned, and explored TSLA, BND, and SPY data.
